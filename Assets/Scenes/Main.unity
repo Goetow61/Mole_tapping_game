@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 227578238}
   - component: {fileID: 227578237}
   m_Layer: 0
-  m_Name: Hole (2)
+  m_Name: Hole3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227578236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.188934, y: 117.97235, z: 0}
+  m_LocalPosition: {x: 161, y: 88, z: 0}
   m_LocalScale: {x: 24.577572, y: 24.577572, z: 0.6144393}
   m_Children: []
   m_Father: {fileID: 2035018801}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 336880216}
   - component: {fileID: 336880215}
   m_Layer: 0
-  m_Name: Hole
+  m_Name: Hole1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,7 +264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336880214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -145.00768, y: 113.67127, z: 0}
+  m_LocalPosition: {x: -145.00768, y: 89, z: 0}
   m_LocalScale: {x: 24.577572, y: 24.577572, z: 0.6144393}
   m_Children: []
   m_Father: {fileID: 2035018801}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 543191848}
   - component: {fileID: 543191847}
   m_Layer: 0
-  m_Name: Hole (6)
+  m_Name: Hole7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,7 +343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543191846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 126.5745, y: -135.17665, z: 0}
+  m_LocalPosition: {x: 163, y: -186, z: 0}
   m_LocalScale: {x: 24.577572, y: 24.577572, z: 0.6144393}
   m_Children: []
   m_Father: {fileID: 2035018801}
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 1050623763}
   - component: {fileID: 1050623762}
   m_Layer: 0
-  m_Name: Hole (5)
+  m_Name: Hole6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050623761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 258.67896, y: -6.7588325, z: 0}
+  m_LocalPosition: {x: 311, y: -47, z: 0}
   m_LocalScale: {x: 24.577572, y: 24.577572, z: 0.6144393}
   m_Children: []
   m_Father: {fileID: 2035018801}
@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 1173218609}
   - component: {fileID: 1173218608}
   m_Layer: 0
-  m_Name: Hole (4)
+  m_Name: Hole5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -583,7 +583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173218607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -147.46544, y: -130.87558, z: 0}
+  m_LocalPosition: {x: -149, y: -175, z: 0}
   m_LocalScale: {x: 24.577572, y: 24.577572, z: 0.6144393}
   m_Children: []
   m_Father: {fileID: 2035018801}
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 1288194329}
   - component: {fileID: 1288194328}
   m_Layer: 0
-  m_Name: Hole (1)
+  m_Name: Hole2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,7 +662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288194327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -291, y: -21, z: 0}
+  m_LocalPosition: {x: -298, y: -41, z: 0}
   m_LocalScale: {x: 24, y: 24, z: 0.6}
   m_Children: []
   m_Father: {fileID: 2035018801}
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 2064206721}
   - component: {fileID: 2064206720}
   m_Layer: 0
-  m_Name: Hole (3)
+  m_Name: Hole4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -912,7 +912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064206719}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.58986, y: -11.059908, z: 0}
+  m_LocalPosition: {x: 13, y: -39, z: 0}
   m_LocalScale: {x: 24.577572, y: 24.577572, z: 0.6144393}
   m_Children: []
   m_Father: {fileID: 2035018801}
