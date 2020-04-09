@@ -19,12 +19,13 @@ public class HoleGenerator : MonoBehaviour
 
         // オブジェクト配列を座標指定要素数だけ定義
         GameObject[] Holes = new GameObject[positions.GetLength(0)];
+        GameObject PlayCanvas = GameObject.Find("PlayCanvas");
 
         // 座標指定要素だけ、HolePrefabを元に生成
         for (int i = 0; i < positions.GetLength(0); i++)
         {
-            Holes[i] = Instantiate(HolePrefab);
-            Holes[i].transform.position = new Vector3(positions[i, 0], positions[i, 1], 0);
+            Holes[i] = Instantiate(HolePrefab, new Vector3(positions[i, 0], positions[i, 1], 90), Quaternion.identity);
+            Holes[i].transform.SetParent( PlayCanvas.transform, true);
         }
     }
 
