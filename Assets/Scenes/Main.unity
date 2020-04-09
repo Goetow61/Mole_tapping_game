@@ -851,6 +851,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2aeee520b9b6654dabe9ec14f76f0da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1730262423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730262424}
+  m_Layer: 0
+  m_Name: HoleGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1730262424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730262423}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.390359, y: 28.958286, z: 0}
+  m_LocalScale: {x: 65.5125, y: 65.5125, z: 65.5125}
+  m_Children: []
+  m_Father: {fileID: 2035018801}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035018797
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +972,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1699929393}
+  - {fileID: 1730262424}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
