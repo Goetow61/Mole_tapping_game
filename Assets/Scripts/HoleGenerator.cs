@@ -24,7 +24,7 @@ public class HoleGenerator : MonoBehaviour
         // 座標指定要素だけ、HolePrefabを元に生成
         for (int i = 0; i < positions.GetLength(0); i++)
         {
-            Holes[i] = Instantiate(HolePrefab, new Vector3(positions[i, 0], positions[i, 1], 0), Quaternion.identity);
+            Holes[i] = Instantiate(HolePrefab, new Vector3(positions[i, 0], positions[i, 1], 90), Quaternion.identity);
             Holes[i].transform.SetParent( PlayCanvas.transform, true);
         }
     }
