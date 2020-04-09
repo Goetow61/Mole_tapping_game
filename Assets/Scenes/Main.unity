@@ -770,6 +770,7 @@ GameObject:
   - component: {fileID: 1699929393}
   - component: {fileID: 1699929395}
   - component: {fileID: 1699929394}
+  - component: {fileID: 1699929396}
   m_Layer: 5
   m_Name: "\bTimer"
   m_TagString: Untagged
@@ -791,10 +792,10 @@ RectTransform:
   m_Father: {fileID: 2035018801}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225.3, y: 200.4}
-  m_SizeDelta: {x: 193.5, y: 52.9}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 174.7, y: -99.600006}
+  m_SizeDelta: {x: 193.5, y: 52.899994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1699929394
 MonoBehaviour:
@@ -838,6 +839,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699929392}
   m_CullTransparentMesh: 0
+--- !u!114 &1699929396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699929392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2aeee520b9b6654dabe9ec14f76f0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2035018797
 GameObject:
   m_ObjectHideFlags: 0
