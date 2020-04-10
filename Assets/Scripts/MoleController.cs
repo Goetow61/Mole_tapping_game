@@ -26,6 +26,7 @@ public class MoleController : MonoBehaviour
     // モグラをクリックしたら、モグラを消す
     public void MoleClick()
     {
+        transform.parent.gameObject.tag = "HolePrefab";
         Destroy(gameObject);
     }
 }
