@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5117818036800383929}
   - component: {fileID: 5117818036800383928}
   - component: {fileID: 5117818036800383935}
+  - component: {fileID: 8583351839236624293}
   m_Layer: 0
   m_Name: MolePrefab
   m_TagString: Untagged
@@ -35,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.2, y: 5.3}
+  m_AnchoredPosition: {x: -0.2, y: 5.299988}
   m_SizeDelta: {x: 3.8, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5117818036800383929
@@ -117,3 +118,15 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &8583351839236624293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5117818036800383933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa25fcb92d31c64fbe1e5d91a9938e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
