@@ -18,14 +18,20 @@ public class MoleGenerator : MonoBehaviour
     void Update()
     {
         delta += Time.deltaTime;
-        GameObject Mole0 = GameObject.Find("MolePrefab(Clone)");
+        // GameObject Mole0 = GameObject.Find("MolePrefab(Clone)");
+        GameObject[] Holes = GameObject.FindGameObjectsWithTag("HolePrefab");
 
-        if (Mole0 == null && delta > span)
+        if (Holes.GetLength(0) > 0 && delta > span)
         {
             delta = 0;
             GameObject Mole = new GameObject();
-            GameObject Hole = GameObject.Find("HolePrefab(Clone)");
-            Mole = Instantiate(MolePrefab, Hole.transform);
+            int x = Random.Range(0, Holes.GetLength(0)-1);
+            //GameObject Hole = GameObject.Find("HolePrefab(Clone)");
+            //Mole = Instantiate(MolePrefab, Hole.transform);
+            Mole = Instantiate(MolePrefab, Holes[x].transform);
+
+            //モグラを生成した穴のタグを、「Untagged」に切り替える
+            Holes[x].tag = "Untagged";
         }
     }
 }
