@@ -17,20 +17,22 @@ public class MoleGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // 前フレームとの差分時間をdeltaに累積する
         delta += Time.deltaTime;
-        // GameObject Mole0 = GameObject.Find("MolePrefab(Clone)");
+        // モグラが生成されていない穴オブジェクト全てを取得する
         GameObject[] Holes = GameObject.FindGameObjectsWithTag("HolePrefab");
 
+        // 約1.5秒間隔で、モグラが生成されていない穴があれば、モグラを生成する
         if (Holes.GetLength(0) > 0 && delta > span)
         {
+            // 次のモグラ生成に備える為差分時間リセット
             delta = 0;
-            GameObject Mole = new GameObject();
+            // 0～穴の数-1の間でランダムな整数値を取得
             int x = Random.Range(0, Holes.GetLength(0)-1);
-            //GameObject Hole = GameObject.Find("HolePrefab(Clone)");
-            //Mole = Instantiate(MolePrefab, Hole.transform);
-            Mole = Instantiate(MolePrefab, Holes[x].transform);
+            // 穴の子要素としてモグラを生成
+            GameObject Mole = Instantiate(MolePrefab, Holes[x].transform);
 
-            //モグラを生成した穴のタグを、「Untagged」に切り替える
+            //モグラを生成した親要素の穴のタグを、「Untagged」に切り替える
             Holes[x].tag = "Untagged";
         }
     }
