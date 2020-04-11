@@ -17,9 +17,15 @@ public class SceneController : MonoBehaviour
         
     }
 
-    // ボタンを押したらゲームスタート
+    // ゲームを始めるボタンを押したらゲームシーンに切り替え
     public void StartButtonClick()
     {
         SceneManager.LoadScene("Main");
+    }
+
+    // 履歴を見るボタンを押したら履歴シーンに切り替え
+    public void HistoryButtonClick()
+    {
+        SceneManager.LoadScene("History");
     }
 }
