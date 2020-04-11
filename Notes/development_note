@@ -46,4 +46,11 @@
 穴にタグを設定する。
 HolePrefabを設定して、モグラ生成時にUntaggedに切り替え。
 モグラDestroy時に、親要素を参照しHolePrefabタグに戻す。
-
+・スコアをカウントする
+  スコアテキストにScoreControllerをアタッチして記録
+  MoleControllerに、Score = GameObject.Find("Score")。Score.GetComponent<ScoreController>().CountUp(1)を追加
+  同様にTimeControllerに、public GameObject Score宣言。Score.GetComponent<ScoreController>().SetDateTime()を追加(ついでに変数名変更countTime→timer)
+  TimerのScoreにスコアテキストを設定
+  ついでにMoleGeneratorに、public GameObject Timer宣言。Timer.GetComponent<TimerController>().timerを追加
+  MoleGeneratorのTimerにタイマーテキストを設定
+  デバッグ　親オブジェクトがDeActiveのままではScoreオブジェクトに変数を格納できないので、空オブジェクト作成に切り替え。

@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour
 {
-    float countTime = 15.0f;
+    public float timer = 15.0f;
+    public GameObject ScoreController;
+    public GameObject ResultCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -16,14 +18,22 @@ public class TimerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (countTime > 0.0f)
+        if (timer > 0.0f)
         {
-            countTime -= Time.deltaTime; // 残り秒数を格納
-            GetComponent<Text>().text = string.Format("残り {0:F1}", countTime); // 残り秒数を表示
+            // 残り秒数を格納
+            timer -= Time.deltaTime;
+            // 残り秒数を表示
+            GetComponent<Text>().text = string.Format("残り {0:F1}", timer); 
         }
+        // 時間切れ時の処理
         else
         {
-            // 時間切れ時の処理
+            // 終了を表示
+            GetComponent<Text>().text = "Time UP!!"; 
+            // 終了日時を記録させる
+            ScoreController.GetComponent<ScoreController>().SetDateTime();
+            // 結果表示Canvasを表示させる
+            ResultCanvas.SetActive(true);
         }
     }
 }
