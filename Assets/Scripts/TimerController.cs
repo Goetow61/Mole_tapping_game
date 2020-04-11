@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimerController : MonoBehaviour
 {
     public float timer = 15.0f;
-    public GameObject Score;
+    public GameObject ScoreController;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,7 @@ public class TimerController : MonoBehaviour
             // 終了を表示
             GetComponent<Text>().text = "Time UP!!"; 
             // 終了日時を記録させる
-            Score.GetComponent<ScoreController>().SetDateTime();
+            ScoreController.GetComponent<ScoreController>().SetDateTime();
         }
     }
 }

@@ -53,4 +53,4 @@ HolePrefabを設定して、モグラ生成時にUntaggedに切り替え。
   TimerのScoreにスコアテキストを設定
   ついでにMoleGeneratorに、public GameObject Timer宣言。Timer.GetComponent<TimerController>().timerを追加
   MoleGeneratorのTimerにタイマーテキストを設定
-  ScoreControllerのスクリプトが合ってるかどうか確認しながらデバッグ
+  デバッグ　親オブジェクトがDeActiveのままではScoreオブジェクトに変数を格納できないので、空オブジェクト作成に切り替え。
