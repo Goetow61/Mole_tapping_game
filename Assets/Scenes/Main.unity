@@ -476,6 +476,7 @@ MonoBehaviour:
   MolePrefab: {fileID: 5117818036800383933, guid: e49c96d4dcc3afc468dd29560de4c766,
     type: 3}
   Timer: {fileID: 1699929392}
+  mole: {fileID: 8300000, guid: 5145fd3729849364bbda684534f7de89, type: 3}
 --- !u!1 &925937591
 GameObject:
   m_ObjectHideFlags: 0

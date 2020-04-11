@@ -6,7 +6,8 @@ public class MoleGenerator : MonoBehaviour
 {
     public GameObject MolePrefab;
     public GameObject Timer;
-    float span = 1.5f;
+    public AudioClip mole;
+    float span = 1.0f;
     float delta = 0;
 
     // Start is called before the first frame update
@@ -31,6 +32,7 @@ public class MoleGenerator : MonoBehaviour
             // 0～穴の数-1の間でランダムな整数値を取得
             int x = Random.Range(0, Holes.GetLength(0)-1);
             // 穴の子要素としてモグラを生成
+            AudioSource.PlayClipAtPoint(mole, new Vector3(0, 0, 0));
             GameObject Mole = Instantiate(MolePrefab, Holes[x].transform);
 
             //モグラを生成した親要素の穴のタグを、「Untagged」に切り替える
