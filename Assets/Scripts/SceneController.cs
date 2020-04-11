@@ -24,6 +24,10 @@ public class SceneController : MonoBehaviour
     public void StartButtonClick()
     {
         AudioSource.PlayClipAtPoint(startbutton, new Vector3(0, 0, 0));
+        Invoke("StartButtonClick2", 1.2f);
+    }
+    void StartButtonClick2()
+    {
         SceneManager.LoadScene("Main");
     }
 
@@ -31,6 +35,10 @@ public class SceneController : MonoBehaviour
     public void HistoryButtonClick()
     {
         AudioSource.PlayClipAtPoint(button, new Vector3(0, 0, 0));
+        Invoke("HistoryButtonClick2", 1.2f);
+    }
+    void HistoryButtonClick2()
+    {
         SceneManager.LoadScene("History");
     }
 
@@ -38,6 +46,10 @@ public class SceneController : MonoBehaviour
     public void HomeButtonClick()
     {
         AudioSource.PlayClipAtPoint(button, new Vector3(0, 0, 0));
+        Invoke("HomeButtonClick2", 1.2f);
+    }
+    void HomeButtonClick2()
+    {
         SceneManager.LoadScene("Top");
     }
 }
