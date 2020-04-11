@@ -11,6 +11,7 @@ public class HistoryGenerator : MonoBehaviour
 {
     public GameObject ScoreNode;
     public string[][] jag;
+    public AudioClip button;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class HistoryGenerator : MonoBehaviour
         GameObject[] ScoreNodes = GameObject.FindGameObjectsWithTag("Destroy");
         if (ScoreNodes.GetLength(0) > 0)
         {
+            AudioSource.PlayClipAtPoint(button, new Vector3(0, 0, 0));
             // 一旦履歴を削除
             foreach (GameObject Node in ScoreNodes)
             {
