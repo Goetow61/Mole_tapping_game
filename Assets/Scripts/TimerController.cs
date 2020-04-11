@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour
 {
-    float timer = 15.0f;
+    public float timer = 15.0f;
     public GameObject Score;
 
     // Start is called before the first frame update

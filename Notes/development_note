@@ -51,6 +51,6 @@ HolePrefabを設定して、モグラ生成時にUntaggedに切り替え。
   MoleControllerに、Score = GameObject.Find("Score")。Score.GetComponent<ScoreController>().CountUp(1)を追加
   同様にTimeControllerに、public GameObject Score宣言。Score.GetComponent<ScoreController>().SetDateTime()を追加(ついでに変数名変更countTime→timer)
   TimerのScoreにスコアテキストを設定
-  ついでにMoleGeneratorに、public GameObject Timer宣言。Timer.GetComponent<TimerController>().Timerを追加
+  ついでにMoleGeneratorに、public GameObject Timer宣言。Timer.GetComponent<TimerController>().timerを追加
   MoleGeneratorのTimerにタイマーテキストを設定
   ScoreControllerのスクリプトが合ってるかどうか確認しながらデバッグ

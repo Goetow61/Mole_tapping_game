@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoleGenerator : MonoBehaviour
 {
     public GameObject MolePrefab;
+    public GameObject Timer;
     float span = 1.5f;
     float delta = 0;
 
@@ -23,7 +24,7 @@ public class MoleGenerator : MonoBehaviour
         GameObject[] Holes = GameObject.FindGameObjectsWithTag("HolePrefab");
 
         // 約1.5秒間隔で、モグラが生成されていない穴があれば、モグラを生成する
-        if (Holes.GetLength(0) > 0 && delta > span)
+        if (Holes.GetLength(0) > 0 && delta > span && Timer.GetComponent<TimerController>().timer > 0.0f)
         {
             // 次のモグラ生成に備える為差分時間リセット
             delta = 0;
