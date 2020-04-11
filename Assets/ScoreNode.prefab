@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8226888215240571465}
   - component: {fileID: 4815111078564158907}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 4937650024344962327}
   - component: {fileID: 7682377496083261444}
   - component: {fileID: 4682013274041401393}
+  - component: {fileID: 7059135180997465959}
   m_Layer: 5
   m_Name: ScoreNode
   m_TagString: Untagged
@@ -276,3 +277,17 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &7059135180997465959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241982864190148018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382e3a9d12cbcc44eb50598da3e2a20f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dateTime: {fileID: 3474060704834004615}
+  score: {fileID: 210165012358030566}

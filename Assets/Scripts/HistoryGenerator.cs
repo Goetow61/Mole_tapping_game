@@ -9,6 +9,8 @@ using System;
 
 public class HistoryGenerator : MonoBehaviour
 {
+    public GameObject ScoreNode;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,10 +35,12 @@ public class HistoryGenerator : MonoBehaviour
             Array.Sort(lines);
             Array.Reverse(lines);
 
-            //foreach (string line in lines)
-            //{
-                
-            //}
+            foreach (string line in lines)
+            {
+                GameObject History = Instantiate(ScoreNode, transform);
+                //History.GetComponent<>
+
+            }
 
             // 一旦コンソールに出して確認
             //foreach (string line in lines)
@@ -46,6 +50,7 @@ public class HistoryGenerator : MonoBehaviour
 
             // StreamReaderを閉じる
             sr.Close();
+
         }
         else
         {
