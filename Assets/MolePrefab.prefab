@@ -130,4 +130,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa25fcb92d31c64fbe1e5d91a9938e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: {fileID: 0}
+  ScoreController: {fileID: 0}
+  tap: {fileID: 8300000, guid: 886dc1cb16a71a24797d08830c7ef51d, type: 3}
