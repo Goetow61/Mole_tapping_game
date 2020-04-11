@@ -28,4 +28,10 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("History");
     }
+
+    // ホームボタンを押したらTopシーンに切り替え
+    public void HomeButtonClick()
+    {
+        SceneManager.LoadScene("Top");
+    }
 }
