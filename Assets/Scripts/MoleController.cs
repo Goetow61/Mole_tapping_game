@@ -7,6 +7,7 @@ public class MoleController : MonoBehaviour
 {
     private Button moleButton;
     public GameObject ScoreController;
+    public AudioClip tap;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class MoleController : MonoBehaviour
     // モグラをクリックしたら、モグラを消す
     public void MoleClick()
     {
+        AudioSource.PlayClipAtPoint(tap, new Vector3(0, 0, 0));
         transform.parent.gameObject.tag = "HolePrefab";
         ScoreController.GetComponent<ScoreController>().CountUp(1);
         Destroy(gameObject);

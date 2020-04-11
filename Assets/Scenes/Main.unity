@@ -253,6 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6531cc23489aa46a34907377265585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 8300000, guid: 8e70dde2363b906458d84d06d7c3e0cc, type: 3}
+  startbutton: {fileID: 0}
 --- !u!1 &730147411
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +476,7 @@ MonoBehaviour:
   MolePrefab: {fileID: 5117818036800383933, guid: e49c96d4dcc3afc468dd29560de4c766,
     type: 3}
   Timer: {fileID: 1699929392}
+  mole: {fileID: 8300000, guid: 5145fd3729849364bbda684534f7de89, type: 3}
 --- !u!1 &925937591
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6531cc23489aa46a34907377265585, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  startbutton: {fileID: 8300000, guid: 2b590eb3ab850294998889b753e6bd8c, type: 3}
 --- !u!1 &1175310995
 GameObject:
   m_ObjectHideFlags: 0
