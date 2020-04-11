@@ -48,10 +48,9 @@ HolePrefabを設定して、モグラ生成時にUntaggedに切り替え。
 モグラDestroy時に、親要素を参照しHolePrefabタグに戻す。
 ・スコアをカウントする
   スコアテキストにScoreControllerをアタッチして記録
-  MoleControllerに、public GameObject score宣言。ScoreController.CountUp(1)を追加
-  MolePrefabのscoreにスコアテキストを設定
-  同様にTimeControllerに、public GameObject score宣言。ScoreController.SetDateTime()を追加(ついでに変数名変更countTime→timer)
-  Timerのscoreにスコアテキストを設定
-  ついでにMoleGeneratorに、public GameObject timer宣言。TimerController.timerを追加
-  MoleGeneratorのtimerにタイマーテキストを設定
+  MoleControllerに、Score = GameObject.Find("Score")。Score.GetComponent<ScoreController>().CountUp(1)を追加
+  同様にTimeControllerに、public GameObject Score宣言。Score.GetComponent<ScoreController>().SetDateTime()を追加(ついでに変数名変更countTime→timer)
+  TimerのScoreにスコアテキストを設定
+  ついでにMoleGeneratorに、public GameObject Timer宣言。Timer.GetComponent<TimerController>().Timerを追加
+  MoleGeneratorのTimerにタイマーテキストを設定
   ScoreControllerのスクリプトが合ってるかどうか確認しながらデバッグ
