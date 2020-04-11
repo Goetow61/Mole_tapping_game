@@ -40,7 +40,7 @@ public class ScoreController : MonoBehaviour
         // 引数説明：第1引数→ファイル出力先, 第2引数→ファイルに追記(true)or上書き(false), 第3引数→エンコード
         StreamWriter sw = new StreamWriter(@"SaveScore.csv", true, Encoding.GetEncoding("Shift_JIS"));
         // データ出力
-        string[] str = { date1.ToString("yyyy/MM/dd HH:mm"), score.ToString() };
+        string[] str = { date1.ToString("yyyy/MM/dd HH:mm"), score.ToString("000") };
         string str2 = string.Join(",", str);
         sw.WriteLine(str2);
         // StreamWriterを閉じる
