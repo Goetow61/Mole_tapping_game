@@ -8,6 +8,7 @@ public class TimerController : MonoBehaviour
     public float timer = 15.0f;
     public GameObject ScoreController;
     public GameObject ResultCanvas;
+    public bool flag = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class TimerController : MonoBehaviour
             GetComponent<Text>().text = string.Format("残り {0:F1}", timer); 
         }
         // 時間切れ時の処理
-        else
+        else if(flag)
         {
             // 終了を表示
             GetComponent<Text>().text = "Time UP!!"; 
@@ -34,6 +35,8 @@ public class TimerController : MonoBehaviour
             ScoreController.GetComponent<ScoreController>().SetDateTime();
             // 結果表示Canvasを表示させる
             ResultCanvas.SetActive(true);
+            // 繰り返しさせないフラグ
+            flag = false;
         }
     }
 }
