@@ -38,15 +38,10 @@ public class HistoryGenerator : MonoBehaviour
             foreach (string line in lines)
             {
                 GameObject History = Instantiate(ScoreNode, transform);
-                //History.GetComponent<>
-
+                string[] splitedData = line.Split(',');
+                History.GetComponent<ScoreNodeController>().DateTime.GetComponent<Text>().text = splitedData[0];
+                History.GetComponent<ScoreNodeController>().Score.GetComponent<Text>().text = splitedData[1];
             }
-
-            // 一旦コンソールに出して確認
-            //foreach (string line in lines)
-            //{
-            //    Debug.Log(line);
-            //}
 
             // StreamReaderを閉じる
             sr.Close();
@@ -55,7 +50,6 @@ public class HistoryGenerator : MonoBehaviour
         else
         {
             // 履歴無し
-            Debug.Log("CSVが無い");
         }
     }
 

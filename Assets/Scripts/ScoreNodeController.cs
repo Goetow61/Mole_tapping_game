@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ScoreNodeController : MonoBehaviour
 {
-    public GameObject dateTime;
-    public GameObject score;
+    public GameObject DateTime;
+    public GameObject Score;
 
     // Start is called before the first frame update
     void Start()

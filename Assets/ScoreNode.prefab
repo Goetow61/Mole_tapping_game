@@ -289,5 +289,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382e3a9d12cbcc44eb50598da3e2a20f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dateTime: {fileID: 3474060704834004615}
-  score: {fileID: 210165012358030566}
+  DateTime: {fileID: 3474060704834004615}
+  Score: {fileID: 210165012358030566}
