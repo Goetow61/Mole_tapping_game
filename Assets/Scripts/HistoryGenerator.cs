@@ -10,6 +10,7 @@ using System;
 public class HistoryGenerator : MonoBehaviour
 {
     public GameObject ScoreNode;
+    public string[][] jag;
 
     // Start is called before the first frame update
     void Start()
@@ -17,18 +18,10 @@ public class HistoryGenerator : MonoBehaviour
         if (System.IO.File.Exists(@"SaveScore.csv"))
         {
             // CSVを読み込んでジャグ配列へ
-            string[][] jag = ReadCsvToJaggedArray(@"SaveScore.csv");
+            jag = ReadCsvToJaggedArray(@"SaveScore.csv");
 
-            // 日付で降順にソート
-            Array.Sort(jag, (x, y) => String.Compare(y[0],x[0])); // 日付-降順　★
-
-            // オブジェクトの作成
-            foreach (string[] line in jag)
-            {
-                GameObject History = Instantiate(ScoreNode, transform);
-                History.GetComponent<ScoreNodeController>().DateTime.GetComponent<Text>().text = line[0];
-                History.GetComponent<ScoreNodeController>().Score.GetComponent<Text>().text = line[1];
-            }
+            // 配列の並び変えと履歴オブジェクトの作成 true:降順, 0:日付
+            SortAndGenerate(true, 0);
         }
     }
 
@@ -36,6 +29,39 @@ public class HistoryGenerator : MonoBehaviour
     void Update()
     {
         
+    }
+
+    // 履歴の並び替え
+    public void SortAndGenerate(bool order, int index)
+    {
+        // tag Destroyを探して、有るならDestroy(Destroy)
+        GameObject[] ScoreNodes = GameObject.FindGameObjectsWithTag("Destroy");
+        if (ScoreNodes.GetLength(0) > 0)
+        {
+            // 一旦履歴を削除
+            foreach (GameObject Node in ScoreNodes)
+            {
+                Destroy(Node);
+            }
+        }
+
+        // 条件別にソート
+        if (order)
+        {
+            Array.Sort(jag, (x, y) => String.Compare(y[index], x[index]));
+        }
+        else
+        {
+            Array.Sort(jag, (x, y) => String.Compare(x[index], y[index]));
+        }
+
+        // 履歴オブジェクトの作成
+        foreach (string[] line in jag)
+        {
+            GameObject History = Instantiate(ScoreNode, transform);
+            History.GetComponent<ScoreNodeController>().DateTime.GetComponent<Text>().text = line[0];
+            History.GetComponent<ScoreNodeController>().Score.GetComponent<Text>().text = line[1];
+        }
     }
 
     // CSV読み込み、ジャグ配列作成(DateTimeも、intも文字列として読込)
