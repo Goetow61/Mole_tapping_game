@@ -1,4 +1,4 @@
-# もぐら叩きゲーム 
+# もぐら叩きゲーム
 
 <img src="https://user-images.githubusercontent.com/57985382/79054372-3760c100-7c7f-11ea-9263-08078adb3498.PNG" width="50%">
 
